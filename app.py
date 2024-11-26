@@ -94,7 +94,7 @@ st.markdown('<p class="header">Enter the following parameters for prediction:</p
 with st.container():
     # Collect user input
     baseline_value = st.number_input("Baseline Value", min_value=106, max_value=160)
-    accelerations = st.number_input("Accelerations", min_value=0.0, max_value=0.019, step=0.001)
+    accelerations = st.number_input("Accelerations", min_value=0.0, max_value=0.019, format="%.3f")
     fetal_movement = st.number_input("Fetal Movement", min_value=0.0, max_value=0.481)
     uterine_contractions = st.number_input("Uterine Contractions", min_value=0.0, max_value=0.015)
     light_decelerations = st.number_input("Light Decelerations", min_value=0.0, max_value=0.015)
